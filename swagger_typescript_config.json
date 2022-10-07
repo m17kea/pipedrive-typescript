@@ -4,9 +4,8 @@
     "allowUnicodeIdentifiers": "false",
     "modelPropertyNaming": "original",
     "supportsES6": "true",
-    "npmName": "pipedrive-client",
+    "npmName": "pipedrive-typescript",
     "npmVersion": "1.0.0",
-    "npmRepository": "npm.pipedrive.com",
     "snapshot": "false",
     "withInterfaces": "true"
 }
