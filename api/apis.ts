@@ -1,0 +1,86 @@
+export * from './activitiesApi';
+import { ActivitiesApi } from './activitiesApi';
+export * from './activityFieldsApi';
+import { ActivityFieldsApi } from './activityFieldsApi';
+export * from './activityTypesApi';
+import { ActivityTypesApi } from './activityTypesApi';
+export * from './billingApi';
+import { BillingApi } from './billingApi';
+export * from './callLogsApi';
+import { CallLogsApi } from './callLogsApi';
+export * from './channelsApi';
+import { ChannelsApi } from './channelsApi';
+export * from './currenciesApi';
+import { CurrenciesApi } from './currenciesApi';
+export * from './dealFieldsApi';
+import { DealFieldsApi } from './dealFieldsApi';
+export * from './dealsApi';
+import { DealsApi } from './dealsApi';
+export * from './filesApi';
+import { FilesApi } from './filesApi';
+export * from './filtersApi';
+import { FiltersApi } from './filtersApi';
+export * from './goalsApi';
+import { GoalsApi } from './goalsApi';
+export * from './itemSearchApi';
+import { ItemSearchApi } from './itemSearchApi';
+export * from './leadLabelsApi';
+import { LeadLabelsApi } from './leadLabelsApi';
+export * from './leadSourcesApi';
+import { LeadSourcesApi } from './leadSourcesApi';
+export * from './leadsApi';
+import { LeadsApi } from './leadsApi';
+export * from './legacyTeamsApi';
+import { LegacyTeamsApi } from './legacyTeamsApi';
+export * from './mailboxApi';
+import { MailboxApi } from './mailboxApi';
+export * from './noteFieldsApi';
+import { NoteFieldsApi } from './noteFieldsApi';
+export * from './notesApi';
+import { NotesApi } from './notesApi';
+export * from './organizationFieldsApi';
+import { OrganizationFieldsApi } from './organizationFieldsApi';
+export * from './organizationRelationshipsApi';
+import { OrganizationRelationshipsApi } from './organizationRelationshipsApi';
+export * from './organizationsApi';
+import { OrganizationsApi } from './organizationsApi';
+export * from './permissionSetsApi';
+import { PermissionSetsApi } from './permissionSetsApi';
+export * from './personFieldsApi';
+import { PersonFieldsApi } from './personFieldsApi';
+export * from './personsApi';
+import { PersonsApi } from './personsApi';
+export * from './pipelinesApi';
+import { PipelinesApi } from './pipelinesApi';
+export * from './productFieldsApi';
+import { ProductFieldsApi } from './productFieldsApi';
+export * from './productsApi';
+import { ProductsApi } from './productsApi';
+export * from './recentsApi';
+import { RecentsApi } from './recentsApi';
+export * from './rolesApi';
+import { RolesApi } from './rolesApi';
+export * from './stagesApi';
+import { StagesApi } from './stagesApi';
+export * from './subscriptionsApi';
+import { SubscriptionsApi } from './subscriptionsApi';
+export * from './userConnectionsApi';
+import { UserConnectionsApi } from './userConnectionsApi';
+export * from './userSettingsApi';
+import { UserSettingsApi } from './userSettingsApi';
+export * from './usersApi';
+import { UsersApi } from './usersApi';
+export * from './webhooksApi';
+import { WebhooksApi } from './webhooksApi';
+import * as http from 'http';
+
+export class HttpError extends Error {
+    constructor (public response: http.IncomingMessage, public body: any, public statusCode?: number) {
+        super('HTTP request failed');
+        this.name = 'HttpError';
+    }
+}
+
+export { RequestFile } from '../model/models';
+
+export const APIS = [ActivitiesApi, ActivityFieldsApi, ActivityTypesApi, BillingApi, CallLogsApi, ChannelsApi, CurrenciesApi, DealFieldsApi, DealsApi, FilesApi, FiltersApi, GoalsApi, ItemSearchApi, LeadLabelsApi, LeadSourcesApi, LeadsApi, LegacyTeamsApi, MailboxApi, NoteFieldsApi, NotesApi, OrganizationFieldsApi, OrganizationRelationshipsApi, OrganizationsApi, PermissionSetsApi, PersonFieldsApi, PersonsApi, PipelinesApi, ProductFieldsApi, ProductsApi, RecentsApi, RolesApi, StagesApi, SubscriptionsApi, UserConnectionsApi, UserSettingsApi, UsersApi, WebhooksApi];

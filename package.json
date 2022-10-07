@@ -1,49 +1,30 @@
 {
   "name": "@m17kea/pipedrive-typescript",
   "version": "1.0.0",
-  "description": "swagger client for pipedrive-typescript",
-  "author": "Swagger Codegen Contributors",
-  "keywords": [
-    "fetch",
-    "typescript",
-    "swagger-client",
-    "pipedrive-typescript"
-  ],
-  "license": "Unlicense",
-  "main": "./dist/index.js",
-  "typings": "./dist/index.d.ts",
-  "scripts": {
-    "build": "tsc --outDir dist/",
-    "test": "jest",
-    "prepublishOnly": "npm run build"
-  },
-  "dependencies": {
-    "isomorphic-fetch": "^3.0.0"
-  },
-  "devDependencies": {
-    "@types/jest": "^25.2.1",
-    "@types/node": "^13.13.0",
-    "jest": "^25.4.0",
-    "ts-jest": "^25.4.0",
-    "typescript": "^3.8.3"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest"
-    },
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
-  },
+  "description": "NodeJS client for @m17kea/pipedrive-typescript",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/m17kea/pipedrive-typescript.git"
+  },
+  "main": "dist/api.js",
+  "types": "dist/api.d.ts",
+  "scripts": {
+    "clean": "rm -Rf node_modules/ *.js",
+    "build": "tsc",
+    "test": "npm run build && node dist/client.js"
+  },
+  "author": "OpenAPI-Generator Contributors",
+  "license": "Unlicense",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "request": "^2.81.0",
+    "rewire": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.33",
+    "@types/node": "^12",
+    "@types/request": "^2.48.8",
+    "typescript": "^4.0"
   },
   "bugs": {
     "url": "https://github.com/m17kea/pipedrive-typescript/issues"

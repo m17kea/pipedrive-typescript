@@ -1,0 +1,7 @@
+{
+    "allowUnicodeIdentifiers": "false",
+    "supportsES6": "true",
+    "npmName": "@m17kea/pipedrive-typescript",
+    "npmVersion": "1.0.0",
+    "snapshot": "false"
+}
